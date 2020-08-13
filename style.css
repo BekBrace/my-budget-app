@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* background-color: rgb(36, 32, 32); */
+  /* color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(33, 50, 68);
+}
+.title {
+  background-color: silver;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.container {
+  padding: 30px 40px;
+  border-radius: 1rem;
+  border: 3px solid white;
+  margin: 25px;
+  /* width: 350px; */
+  background-color: rgba(16, 97, 134, 0.685);
+}
+
+h1 {
+  letter-spacing: 2px;
+  margin: 0;
+  margin: 10px 0 10px;
+  text-transform: uppercase;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: azure;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  color: azure;
+}
+#balance {
+  color: azure;
+}
+
+.income-expense {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 5px 6px rgba(58, 73, 80, 0.685),
+    0 5px 6px rgba(58, 73, 80, 0.685);
+}
+
+.income-expense > div {
+  flex: 1;
+  text-align: center;
+}
+
+/* .income-expense > div:first-of-type {
+  border-right: 0.5px solid rgb(0, 0, 0);
+} */
+
+.income,
+.expense,
+#balance {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  font-weight: bolder;
+}
+
+.income {
+  color: green;
+}
+.expense {
+  color: #c34234d3;
+}
+#balance {
+  color: rgb(72, 90, 255);
+}
+.bg-dark {
+  background-color: black;
+  margin: 0 2px;
+
+  border-radius: 3px;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid silver;
+  border-radius: 1rem;
+  /* display: block; */
+  padding: 5px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 1px 2px 1px #000000;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 8px 0;
+  border-radius: 1rem;
+  outline: none;
+  background-color: steelblue;
+  color: whitesmoke;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.btn:hover {
+  color: steelblue;
+  background-color: whitesmoke;
+}
+
+.delete-btn {
+  background-color: rgb(139, 192, 235);
+  border-radius: 1rem;
+  outline: none;
+  float: right;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+#text:focus,
+#amount:focus {
+  width: 110%;
+  transition: 0.5s;
+  border-bottom: 2px solid steelblue;
+  border-right: 2px solid steelblue;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+}
+ul li {
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.fa {
+  color: steelblue;
+}
+.fa:hover {
+  transform: rotate(20deg);
+}
+
+#error_msg {
+  color: red;
+  background-color: rgb(224, 189, 183);
+  font-weight: bolder;
+  padding: 0 10px;
+  border-radius: 1rem;
+}
+
+.list {
+  color: azure;
+}
+
+.minus,
+.plus {
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
+.minus:hover,
+.plus:hover {
+  background-color: rgb(114, 114, 114);
+  cursor: pointer;
+}

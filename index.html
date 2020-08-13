@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My Budget App</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="error_msg"></p>
+      <div class="title">
+        <h1 class="title">
+          My Budget <a href="#"><i class="fa fa-money"></i></a>
+        </h1>
+      </div>
+
+      <h3>New Entry</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Description</label>
+          <input
+            type="text"
+            id="text"
+            onfocus="this.value=''"
+            placeholder="Enter text..."
+          />
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount(+/-) <br /> </label>
+          <input
+            type="number"
+            id="amount"
+            onfocus="this.value=''"
+            placeholder="Enter value..."
+          />
+        </div>
+        <button class="btn">Add transaction</button>
+      </form>
+      <br />
+
+      <div class="income-expense">
+        <div class="bg-dark">
+          <h4>Inflow</h4>
+          <p class="income" id="income">$0.00</p>
+        </div>
+        <div class="bg-dark">
+          <h4>Outflow</h4>
+          <p class="expense" id="expense">$0.00</p>
+        </div>
+        <div class="bg-dark">
+          <h4>Balance</h4>
+          <p id="balance">$0.00</p>
+        </div>
+      </div>
+      <h3>History</h3>
+      <!-- Dynamic unordered list to display the various transactions -->
+      <ul id="list" class="list"></ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

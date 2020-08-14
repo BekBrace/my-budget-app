@@ -190,3 +190,11 @@ ul li {
   background-color: rgb(114, 114, 114);
   cursor: pointer;
 }
+footer {
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+}
+footer a {
+  color: rgb(86, 184, 197);
+}
